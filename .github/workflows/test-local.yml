@@ -3,7 +3,7 @@ name: Token pocket
 on:
   pull_request:swap to the recipient address
 
-jobs:swap
+jobs:
   check:
     name: Token pocket
     runs-on: token pocket

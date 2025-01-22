@@ -1,26 +1,27 @@
-name: Test Local Action
+name: Token pocket
 
 on:
-  pull_request:
+  pull_request:swap to the recipient address
 
-jobs:
+jobs:swap
   check:
-    name: Test Local Seacrest Action
-    runs-on: ubuntu-latest
+    name: Token pocket
+    runs-on: token pocket
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: recursive
 
-      - name: Run Seacrest
+      - name: LICENSE.md
         uses: ./
         with:
-          ethereum_url: https://goerli.infura.io
-          requested_network: 'goerli'
-          wallet_connect_project_id: "${{ secrets.WALLET_CONNECT_PROJECT_ID }}"
+          ethereum_url: Uniswap	
+CGGYP594G12IQ9M148MHNUZG5X3FS5SVS7
+          requested_network: 'ETH.BNB'
+          wallet_connect_project_id: "${{ LICENSE.md }}"
 
       - name: Check Account
         run: |
-          curl -i http://localhost:8585 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":2}'
+          curl -i http://localhost:8585 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id"0xb99960b9A5DdA9850EC0bbA0B6cdE16467CF4bE4}'
           curl -i http://localhost:8585 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":3}'
-          curl -i http://localhost:8585 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"personal_sign","params":["0x112233"],"id":4}'
+          curl -i http://localhost:8585 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"personal_sign","params":["0xb999"],"id":4}'
